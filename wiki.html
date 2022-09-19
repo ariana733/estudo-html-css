@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Estudo de HTML</h1>
+        <h3>Conceitos introdutórios da linguagem</h3>
+ <nav> <!-- Agrupa links da navageação--->
+    <ol>
+        <li><a href="#intro"> Introdução</a></li>
+    </ol>
+    </nav>   
+    </header>
+    <main> <!--Conteúdo principal-->
+    <section> <!-- Separada tópicos conteúdos-->
+        <h3>Uso de Tags</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis eius modi tenetur molestiae eligendi! In ipsam laboriosam nisi quibusdam. Cupiditate, eius. Sint dicta corporis beatae similique ad explicabo nihil dolores.</p>
+    </section>
+<section><h3>Uso de Tabelas</h3>
+    <table border="1" cellpadding="3" style="border-collapse:collapse;"> <!--o "1" em border se refere ao comprimento da borda-->
+        <thead><!--Cabeçalho da tabela-->
+        <tr> <!--Table Row, a linha -->
+            <!--colspan Duração de coluna-->
+            <th colspan="4">Usuários</th>
+            <tr>
+                <th>Tipo</th>
+            <th>Nome</th> <!--table head-->
+            <th>CPF</th>
+            <th>Data Nasc.</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr> <!--separação entre linhas-->
+                <td rowspan="2">Funcionário</td>
+                <td> Ariana Atanazio <!--Table data--></td>
+                <td>000.000.000-00</td>
+                <td>28/12/1995</td>
+            </tr>
+            <td>Maria Aparecida</td>
+            <td>000.000.000-00</td>
+            <td>11/08/1987</td>
+            <tr><!--rowspan duração de linha-->
+                <td rowspan="2">Cliente</td>
+                <td>Alexandre de Assis Grande</td>
+                <td>000.000.000-00</td>
+                <td>05/04/1945</td>
+                
+            </tr>
+            <tr> <td>Alexandre de Assis Grande</td>
+                <td>000.000.000-00</td>
+                <td>05/04/1945</td></tr>
+            </tbody>
+        </tbody>
+    </table>
+<hr />
+<table border="1" cellpadding"4" style="border-collapse: collapse;">
+<tr>
+    <td colspan="2"> Celula 1-1 </td>
+    <td> Celula 1-3</td> 
+</tr>
+<tr>
+<td>Celula 2-1</td>
+<td>Celula 2-2</td>
+<td>Celula 2-3</td>
+
+</table>
+</section>
+</main>
+<hr/> <!--Horizontal rule-->
+<footer><!--Dá informações sobre autoria/encerra o conteúdo-->
+    ©
+<script>
+    // comentario - JAVA - dentro do script é js 
+    document.write(new Date().getFullYear())
+</script>
+SoulCodeAcademy
+</body>
+<!--document.write(new Date().getFullYear()) insere data no rodapé-->
+</html>
