@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form> <!--Container de inputs-->
+        <div>
+            <!--"label" Rótulo do campo (dá um nome)-->
+             <!--Campo de entrada de dados-->
+            <!--Placeholder = dica p/ usuário-->
+            <!-- Required = obrigatório-->
+            <label for="campoNome">Nome Completo</label><br/>
+            <input id="campoNome" name="campoNome" type="text" 
+            placeholder="Seu nome" required/>
+        </div>
+        <div>
+            <label for="campoEmail">Email</label><br/> <!--br quebra de linha-->
+            <input id="campoEmail" name="campoEmail" type="email"
+            placeholder="usuario@exemplo.com" required/>
+        </div>
+        <div>
+            <label for="campoSenha">Senha</label><br/>
+            <input id="campoSenha" name="campoSenha" type="password"  
+            placeholder="Sua senha" required/>
+            <!--password faz surgir ****-->
+        </div>
+        <div>
+            <label for="campoProfissao">Profissão</label><br/>
+            <!--Caixa de seleção com opções limitadas-->
+            <select id="campoProfissão" name="campoProfissao" placeholder="Selecione uma opção" required>
+               <option selection disabled>Selecione uma opção</option>
+               <option value="técnico">Técnico</option>
+               <option value="especialista">Especialista</option>
+               <option value="bacharelado">Bacharelado</option>
+               <option value="professor">Professor</option>
+               <option value="nda">N.D.A</option>
+            </select>
+        </div>
+        <div>
+            <!--name forma um Grupo-->
+            <label>Idioma Nativo</label><br/>
+            <input id="checkIngles" name="campoIdioma" type="radio"
+            value="ingles"/>
+            <label for="checkIngles">Inglês</label>
+
+            <input id="checkEspanhol" name="campoIdioma" type="radio"
+            value="espanhol"/>
+            <label id="checkEspanhol">Espanhol</label>
+
+            <input id="checkPortugues" name="campoIdioma" type="radio"
+            value="portugues"/>
+            <label id="checkPortugues">Português</label>
+        </div>
+        <div>
+            <label>Gênero</label><br/>
+            <input id="checkFeminino" name="campoGenero" type="radio"
+            value="feminino"/>
+            <label for="checkFemino">Feminino</label>
+
+            <input id="checkMasculino" name="campoGenero" type="radio"
+            value="masculino"/>
+            <label for="checkFemino">Masculino</label>
+
+            <input id="checkNaoBinario" name="campoGenero" type="radio"
+            value="NaoBinario"/>
+            <label for="checkNaoBinario">Não-Binário</label>
+        </div>
+        <div>
+            <label for="campoResumo">Fale sobre você</label><br/>
+            <textarea id="campoResumo" name="camporesumo" minlenght="30" 
+            maxlenght="128" rows="5" cols="30" placeholder="Descreva sua vida profissional"></textarea>
+            <!--lenght=número de caractéres min e-->
+        </div>
+        <div>
+            <input id="checkTermos" type="checkbox" 
+            name="concordaTermos" required />
+            <label for="checkTermos">Concordo com os termos de serviço</label>
+        </div>
+        <hr /> <!--linha-->
+        <button type="submit">Enviar</button> <!--SUBMETER-->
+        <button type="reset">Limpar</button>
+        <!--onclick=após o clique do usuáriono botão-->
+        <button type="butom" onclick="alert('Oie')">Outra ação</button>
+    </form>
+</body>
+</html>
