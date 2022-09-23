@@ -1,0 +1,104 @@
+
+* { /*todos os elementos*/
+    /* garante que os elementos respeitem as dimensões quando possuem padding e border*/
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+   
+}
+
+.my-button {
+    background-color: rgb(79, 213, 113);
+    border: none;
+    color: white;
+    /* <vertical> <horizontal>*/
+    padding: 16px 24px;
+    font-size: 16 px;
+    
+    cursor: pointer; /* ícone de clique*/
+    border-radius: 6px;
+    display: inline-block;
+    font-size: 16px;
+    width: 100px;
+    margin: auto;
+    
+}
+
+/* .my-button:hover  quando o mouse passa em cima*/
+.my-button:hover {
+    background-color: cadetblue;
+}
+
+.com-azul { background-color: cornflowerblue;
+
+}
+
+.my-table {
+    width: 400px;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+/* estliza o td/ td dentro do .my-table*/
+.my-table td, .my-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.my-table th {
+    background-color: cornflowerblue;
+    padding: 12px 0;
+    color: white;
+}
+
+/* even = par
+   Aplica o estilo aos tr de número par
+*/
+.my-table tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+.my-table tr:hover {
+    background-color: #ddd;
+}
+
+.my-table td {
+    text-align: center; /* left, right, justify*/
+    height: 50px;
+}
+
+/* CUSTOM FORM */
+.my-form {
+    border-radius: 6px;
+    background-color:#f2f2f2;
+    padding: 20px 16px;
+    width: 300px;
+    margin: auto;
+}
+
+.my-form input {
+    width: 100%;
+    padding: 12px 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    text-align:
+}
+
+.toda-largura {
+    width:100%;
+    margin: 6px 0;
+}
+
+.my-form-group {
+    margin-bottom: 6px;
+}
+
+h3 {
+    text-align: center;
+    background-color: #f4f4f4;
+}

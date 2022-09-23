@@ -1,0 +1,56 @@
+h3{
+    background-color: red;
+}
+
+.box1 {
+    background-color: crimson;
+    /* espaçamento interno*/
+    padding: 16px;
+    /*espaçamento externo*/
+    margin: 8px;
+}
+
+.box2 {
+    background-color: brown;
+    /* T R B L = horário TOP RIGHT BOTTOM LEFT */
+    padding: 8px 20px 4px 10px;
+    margin: 8px 10px 20px 40px;
+}
+
+.box3 {
+    background-color: darkgreen;
+    /* espessura estilo cor*/
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.box4 {
+    background-color: forestgreen;
+    width: 400px; /*fixa o tamanho do conteúdo na página */
+    padding: 20px;
+    border: 5px solid purple
+}
+
+* {
+    /* '*' = todos os elementos da página vão se comportar dessa forma */
+box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: url(https://soulcodeacademy.org/assets/images/logo/light-logo.png) right bottom no-repeat fixed;
+
+    /* cover = zoom*
+    /* contain = respeita a dimensão */
+    /* background-size: contain; */
+    /*background-repeat: no-repeat;
+    /*background-position: center bottom;
+    background-position: right bottom;
+    background-attachment:fixed
+    height:100vh; viewport height = hs */
+}
+
+/*por padrão o navegador dá uma margem de 8px*/
